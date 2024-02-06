@@ -21,21 +21,21 @@ sudo apt install git
 #INSTALL DOCKER
 ```
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
-
+```
 #Now, let’s download the Docker repository’s GPG key and add it to the system’s APT keyring:
-
+```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
+```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
+```
 sudo apt install docker-ce
 
 sudo systemctl start docker
 
 sudo systemctl enable docker
-
+```
 #Install The Final Dependencies
-
+```
 sudo apt-get update -y && sudo apt-get upgrade -y
 
 sudo apt install build-essential
